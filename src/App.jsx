@@ -269,14 +269,14 @@ const App = () => {
               onClick={() => setActiveTool('create')}
             >
               <PlusCircle size={18} />
-              1. 도형 생성
+              생성
             </button>
             <button
               className={`control-btn ${activeTool === 'delete' ? 'active' : ''}`}
               onClick={() => setActiveTool('delete')}
             >
               <Eraser size={18} />
-              2. 도형 삭제
+              삭제
             </button>
           </div>
         </div>
@@ -290,7 +290,7 @@ const App = () => {
               onClick={() => setMagnetActive(!magnetActive)}
             >
               <Magnet size={18} />
-              3. 자석 {magnetActive ? 'ON' : 'OFF'}
+              자석 {magnetActive ? 'ON' : 'OFF'}
             </button>
           </div>
         </div>
@@ -304,14 +304,14 @@ const App = () => {
               onClick={() => setGravityMode('zero')}
             >
               <Rocket size={18} />
-              4. 중력 0
+              무중력
             </button>
             <button
               className={`control-btn ${gravityMode === 'earth' ? 'active' : ''}`}
               onClick={() => setGravityMode('earth')}
             >
               <Globe2 size={18} />
-              5. 중력 생성
+              중력
             </button>
           </div>
         </div>
